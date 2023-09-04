@@ -1,0 +1,39 @@
+<!-- form handling -->
+<form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <div class="form-group">
+                <label for="cno" class="text-light">Cno</label>
+                <input type="text" name="cno" value="" placeholder="740">
+            </div>
+            <label for="course" class="text-light">Course</label>
+            <!--input type="hidden" name="id" value=""-->
+            <input type="text" name="course" value="" placeholder="Computer Science">
+        </div>
+        <div class="form-group">
+            <label for="professor" class="text-light">Professor</label>
+            <input type="text" name="professor" value="" placeholder="John">
+        </div>
+        <div class="form-group">
+            <label for="grade" class="text-light">Grade</label>
+            <input type="text" name="grade" value="" placeholder="A">
+        </div>
+
+        <div class="form-group">
+            <label for="status" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="status" value="Current" >
+                <label for="radio-4" class="radio-label">Current</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="status" value="Completed" >
+                <label for="radio-5" class="radio-label">Completed</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
